@@ -121,6 +121,7 @@ footer {
 }
 
 /* Contact Page */
+
 input[type=text], input[type=email] {
     width: 100%;
     height: 40px;
@@ -142,6 +143,7 @@ input[type=submit] {
 }
 
 /* Portfolio Page */
+
 ul {
     list-style: none;
     line-height: 5px;
@@ -149,7 +151,6 @@ ul {
 }
 
 .portPics {
-    overflow: auto;
     position: relative;
     margin: 10px 5px;
     float: left;
@@ -166,4 +167,69 @@ ul {
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15px;
+}
+
+@media screen and (max-width: 980px) {
+    .mainSection {
+        width: 60%;
+        margin-left: 40px;
+    }
+    header {
+        padding: 0 3% 0 5%;
+    }
+    .profile-pic {
+        width: 30%;
+        height: auto;
+    }
+    img.work {
+        width: 160px;
+    }
+    .portPics h4 {
+        width: 89%;
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mainSection {
+        width: 90%;
+        margin-left: 40px;
+    }
+    header {
+        padding: 0 3% 0 5%;
+    }
+    .profile-pic {
+        width: 30%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        position: static;
+        padding: 0;
+    }
+    .profile-pic {
+        width: 100%;
+        height: 300px;
+    }
+    nav {
+        float: left;
+        background-color: white;
+        margin-right: 15%;
+        margin-left: 25%;
+        padding-bottom: 20px;
+    }
+    #logo {
+        width: 100%;
+    }
+    img.work {
+        width: 500px;
+        height: 300px;
+    }
+    .portPics h4 {
+        width: 96.2%;
+        font-size: 130%;
+        top: 80%;
+    }
 }
